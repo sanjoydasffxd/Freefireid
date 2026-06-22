@@ -1,0 +1,74 @@
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe ID Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0px 0px 15px rgba(255, 165, 0, 0.5);
+        }
+        button {
+            background-color: #ff9900;
+            color: black;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #e68a00;
+        }
+        .success-box {
+            display: none;
+            background-color: #2e7d32;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Free Fire ID Purchase</h2>
+    <p>आईडी सुरक्षित रूप से खरीदने के लिए नीचे दिए गए बटन पर क्लिक करके पेमेंट पूरा करें।</p>
+    <p><strong>कीमत: ₹1,000</strong></p>
+    
+    <button id="payBtn" onclick="startPayment()">Pay Now (पेमेंट करें)</button>
+
+    <div id="successBox" class="success-box">
+        <h3>🎉 पेमेंट सफल रहा!</h3>
+        <p>आपकी फ्री फायर आईडी और पासवर्ड नीचे है:</p>
+        <p><strong>ID:</strong> sanjoyrp5231@gmail.com
+        <p><strong>Password:</strong> sanjoy123456789633633
+        <p style="color: #ffc107;">*कृपया इसे तुरंत लॉग इन करके पासवर्ड बदल लें।</p>
+    </div>
+</div>
+
+<script>
+function startPayment() {
+    alert("पेमेंट प्रोसेस शुरू हो रहा है... (असली सिस्टम में यहाँ UPI/QR कोड आता है)");
+    
+    // यह मान लेते हैं कि पेमेंट सफल हो गया
+    setTimeout(function() {
+        alert("पेमेंट प्राप्त हुआ! आपकी आईडी स्क्रीन पर दिखाई जा रही है।");
+        document.getElementById("payBtn").style.display = "none";
+        document.getElementById("successBox").style.display = "block";
+    }, 2000); // 2 सेकंड का नकली लोड टाइम
+}
+</script>
+
+</body>
+</html>
